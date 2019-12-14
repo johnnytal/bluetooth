@@ -12,13 +12,13 @@ preloader.prototype = {
             font: '18px', fill: 'lightgrey', fontWeight: 'normal', align: 'center'
         });
         
-        this.game.load.spritesheet("button", "assets/sara/images/button4.png", 486/2, 185);
-        this.game.load.image("gear", "assets/sara/images/gearBtn2.png");
-        this.game.load.image("ok", "assets/sara/images/ok.png");
-        this.game.load.image("musicBtn", "assets/sara/images/musicBtn.png");
-        this.game.load.image("panel", "assets/sara/images/panel.png");
+        this.game.load.spritesheet("button", "assets/images/button4.png", 486/2, 185);
+        this.game.load.image("gear", "assets/images/gearBtn2.png");
+        this.game.load.image("ok", "assets/images/ok.png");
+        this.game.load.image("musicBtn", "assets/images/musicBtn.png");
+        this.game.load.image("panel", "assets/images/panel.png");
 
-        this.game.load.audio('musicSfx2', 'assets/sara/audio/music2.ogg');
+        this.game.load.audio('musicSfx2', 'assets/audio/music2.ogg');
     },
     
     create: function(){
