@@ -1,8 +1,6 @@
-window.onload = start;
+//window.onload = start;
 
 document.addEventListener("deviceready", start, false);
-document.addEventListener("pause", onPause, false);
-document.addEventListener("resume", onResume, false);
 
 function start(){ 
     WIDTH = 850; 
@@ -15,19 +13,6 @@ function start(){
     game.state.add("Game", gameMain);
     
     game.state.start("Boot");  
-}
-
-function onPause(){
-    game.paused = true;
-}
-
-function onResume(){
-    game.paused = false;
-    setTimeout(function(){
-        try{
-            StatusBar.hide();
-        }catch(e){}   
-    }, 1000);
 }
 
 var boot = function(game){};
